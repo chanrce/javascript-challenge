@@ -12,7 +12,7 @@
 * JavaScript - D3
 * HTML
 * CSS
-* Bootsrap
+* Bootstrap
 
 ## The Process
 
@@ -20,6 +20,7 @@
 * D3 was used to select the filter button and form. Based on these events, a runEnter function was created in order for a user to enter a date. The input value would then be used to generate a new table, using a nearly identical forEach loop as was used for the initial table. 
 
 ## The Final Product: An Interactive Webiste
-
-* ![Initial Table](../../Images/Website_initial.png)
-* ![Table After Input](../../Images/After_input.png)
+* Table before input:
+ ![Initial Table](UFO-level-1/Images/Website_initial.png)
+* Table after input:
+ ![Table After Input](UFO-level-1/Images/After_input.png)

@@ -43,6 +43,7 @@ function runEnter() {
     var inputValue = inputElement.property("value");
 
     console.log(inputValue);
+
     //Use form input to filter data by date
     var filterData = tableData.filter(function(sighting){
         return sighting.datetime === inputValue;
@@ -52,6 +53,22 @@ function runEnter() {
 
     console.log(filterData);
 
+    var tbody = d3.select("tbody");
+
+    //Clears table before rendering again
+    tbody.html("");
+    
+    
+    filterData.forEach(function(UFOReport) {
+        var row = tbody.append("tr");
+    
+        Object.entries(UFOReport).forEach(function([key,value]) {
+            var cell = row.append("td");
+            cell.text(value)
+        
+        });
+        
+    });
 };
 
 //Step 1: Create a Build Table function
@@ -70,10 +87,3 @@ function runEnter() {
     //1. Make sure the table generates on Page Load
     //2. Be able to filter multiple lines, and is recreated with only newly selected data
     //3. If you clear out filter, the entire table should load
-
-
-
-
-
-
-    

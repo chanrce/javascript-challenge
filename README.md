@@ -21,5 +21,5 @@
 
 ## The Final Product: An Interactive Webiste
 
-* ![Initial Table](Images/web_top.png)
-* ![Table After Input](Images/web_bottom.png)
+* ![Initial Table](../../Images/Website_initial.png)
+* ![Table After Input](../../Images/After_input.png)

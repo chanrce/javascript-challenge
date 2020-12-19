@@ -1,8 +1,6 @@
 // from data.js
 var tableData = data;
 
-// YOUR CODE HERE!
-
 //Refererence to table body
 var tbody = d3.select("tbody");
 
@@ -21,7 +19,6 @@ data.forEach(function(UFOReport) {
     });
     
 });
-
 
 //Form and button data
 
@@ -48,17 +45,19 @@ function runEnter() {
     var filterData = tableData.filter(function(sighting){
         return sighting.datetime === inputValue;
 
-   
     })
 
+    //Logging the filtered data into the console
     console.log(filterData);
 
+    //Creating the "new" table with the filtered data
     var tbody = d3.select("tbody");
 
     //Clears table before rendering again
     tbody.html("");
-    
-    
+
+
+    //Constructing a "new" table out of the filtered data
     filterData.forEach(function(UFOReport) {
         var row = tbody.append("tr");
     
